@@ -10,28 +10,33 @@
 
 <body>
 <div class="mainContent">
+
 	<div class="titleHead">
 	  <h1>IQDB</h1>
 	  <p>The Inspirational Quote DataBase!</p>
 	  <hr>
 	</div>
 
-<button class="addContentButton mainContentButton" type="button">Click to Add a Quote</button>
+<button class="addContentButton mainContentButton" type="button">
+	Click to Add a Quote
+</button>
 <br>
-<button class="randomContentButton mainContentButton" type="button">Click to Get a Random Quote</button>
+<button class="randomContentButton mainContentButton" type="button">
+	Click to Get a Random Quote
+</button>
 
-<!-- Begin Lightbox -->
-<div class="lightbox">
+<!-- Begin Lightbox Add Quote-->
+<div class="lightbox addQuoteLight">
 	<div class="background-box">
 		<div class="info-box">
     		<h3>Want To Add A New Quote?</h3>
 	    	<div>
-				<form class="quoteInput">
-					Author: <input type="text" name="author"><br>
+				<form class="quoteForm">
+					Author: <input class="quoteAuthor" type="text" name="author"><br>
 					<br>
-					Quote: <textarea rows="3" cols="30"></textarea>
+					Quote: <textarea class="quoteInput" rows="3" cols="30"></textarea>
 					<div class="addQuoteButton">
-						<input type="submit" name="quote" value="Add Quote!">
+						<input class="quoteInputSubmit" type="submit" name="quote" value="Add Quote!">
 					</div>
 				</form>
 			</div>
@@ -42,9 +47,26 @@
 		</div>
 	</div>
 </div>
-<!-- End Lightbox -->
+<!-- End Lightbox Add Quote-->
 
-
+<!-- Begin Lightbox Random Quote-->
+<div class="lightbox randomQuoteLight">
+	<div class="background-box">
+		<div class="info-box">
+    		<h3>Random Quote</h3>
+	    	<div>
+				<p></p>
+			</div>
+			<br>
+	    	<div class="closeButton">
+	    		<a>Close</a>
+	    	</div>
+		</div>
+	</div>
+</div>
+<!-- End Lightbox Random Quote-->
+<div class="quoteBox"><p class="quoteP"></p>
+</div>
 
 
 

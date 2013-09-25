@@ -3,11 +3,22 @@ $(document).ready(function(){
 //opening and closing the lightbox to add quotes
 //
 $('.addContentButton').on('click', function(){
-	$('.lightbox').css('display', 'block');
+	$('.addQuoteLight').css('display', 'block');
 });
 
 $('.closeButton').on('click', function(){
-	$('.lightbox').css('display', 'none')
+	$('.addQuoteLight').css('display', 'none')
+});
+//
+//
+//opening and closing the random quote lightbox
+//
+$('.randomContentButton').on('click', function(){
+	$('.randomQuoteLight').css('display', 'block');
+});
+
+$('.closeButton').on('click', function(){
+	$('.randomQuoteLight').css('display', 'none')
 });
 //
 //
@@ -15,6 +26,12 @@ $('.closeButton').on('click', function(){
 
 
 
+$('.quoteInputSubmit').on('click', function(){
+	var quoteAuthor = $('.quoteAuthor').val();
+	var quoteText = $('.quoteInput').val();
+	$('.quoteBox').append("<p>" + quoteAuthor +"</p>");
+	$('.quoteBox').append("<p>" + quoteText + "</p>");
+});
 
 
 
@@ -22,6 +39,13 @@ $('.closeButton').on('click', function(){
 
 
 
+
+
+//
+//
+// function for picking out random quotes from an object in utilities file
+//
+//
 
 
 

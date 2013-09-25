@@ -43,7 +43,7 @@ var pluck = function(arr, propertyName) {
 var printObject = function(o, valueFormatter) {
 	for(var key in o){
 		var formattedValue = valueFormatter(o[key]);
-		console.log(key + " = " + formattedValue;
+		console.log(key + " = " + formattedValue);
 	}
 };
 
@@ -128,7 +128,16 @@ var vowelCount = vowelMatch ? vowelMatch.length : 0;
   return vowelCount; 
 }
 
+/**For picking random quotes from an object!*/
 
+function pickRandomProperty(obj) {
+    var result;
+    var count = 0;
+    for (var prop in obj)
+        if (Math.random() < 1/++count)
+           result = prop;
+    return result;
+}
 
 
 
