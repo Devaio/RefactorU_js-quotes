@@ -35,12 +35,6 @@ $('.quoteInputSubmit').on('click', function(){
 
 
 
-
-
-
-
-
-
 //
 //
 // function for picking out random quotes from an object in utilities file
@@ -50,8 +44,14 @@ $('.quoteInputSubmit').on('click', function(){
 
 
 
+//
+//
+// Star Rating system
 
-
+$('.star').on('click', function() {
+    $(this).nextAll().andSelf().addClass('activeStar');  
+    $(this).prevAll().removeClass('activeStar');
+});
 
 
 

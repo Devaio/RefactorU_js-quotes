@@ -56,8 +56,6 @@ body {
 	float: right;
 	background-color: mistyrose;
 }
-
-
 /* End Lightbox */
 
 .titleHead {
@@ -75,10 +73,26 @@ body {
 }
 
 .quoteBox {
-	height: 200px;
-	width: 200px;
 	background-color: mistyrose;
 }
 
+/* Rating System */
+.rating {
+	float: left;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+   color: gold;
+}
 
-
+.activeStar {
+	color:gold;
+}
